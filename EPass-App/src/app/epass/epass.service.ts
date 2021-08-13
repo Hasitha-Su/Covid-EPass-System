@@ -72,16 +72,6 @@ export class EpassService {
     })
   }
 
-  // upvote(postId: string) {
-  //   return this.apollo.mutate({
-  //     mutation: UPVOTE_POST,
-  //     variables: {
-  //       postId
-  //     }
-  //   });
-  // }
-
-
   updateEpass() {
 
   }
