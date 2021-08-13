@@ -4,7 +4,10 @@ import { InputType, Int, Field } from '@nestjs/graphql';
 export class CreateEpassInput {
 
   @Field()
-  name: string
+  category: string
+
+  @Field()
+  status: string
 
   @Field()
   citizenId: string;

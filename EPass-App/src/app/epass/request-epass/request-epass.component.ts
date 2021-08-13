@@ -9,23 +9,28 @@ import { epass } from '../EPass.model';
 export class RequestEpassComponent {
 
   submitted = false;
-  
+
   constructor() { }
 
   //epassModel!: epass;
   epassModel: epass = {
-    id:"", 
-    category:"",
-    other:""
+    id: "",
+    category: "",
+    other: "",
+    status: ''
   };
 
   categoryList = [
-    'E-Pass For Business', 
-    'VIP E-Pass',
+    'COVID-19: Essential Services',
+    'Health Service',
   ];
 
   onSubmit() { this.submitted = true; }
 
-  newEpass() { }
-
+  newEpass() {
+    this.epassModel = { id: "",
+    category: "",
+    other: "",
+    status: ''};
+  }
 }

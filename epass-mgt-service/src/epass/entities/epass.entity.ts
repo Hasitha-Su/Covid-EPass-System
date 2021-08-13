@@ -14,7 +14,11 @@ export class Epass {
 
   @Field()
   @Column()
-  name: string
+  category: string
+
+  @Field()
+  @Column()
+  status: string
 
   @Field()
   @Column()
