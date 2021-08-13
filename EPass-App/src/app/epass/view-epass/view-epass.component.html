@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Category</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let epass of epassList">
+        <td>{{epass.id}}</td>
+        <td>{{epass.name}}</td>
+        <td>
+            <button (click)="deleteEpass(epass.id)">Delete</button>
+        </td>
+    </tr>
+</table>
