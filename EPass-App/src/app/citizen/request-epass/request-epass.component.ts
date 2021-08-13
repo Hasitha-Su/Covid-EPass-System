@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { epass } from '../EPass.model';
+import { epass } from '../../Models/epass.model';
 
 @Component({
   selector: 'app-request-epass',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
-import { EpassService } from '../epass.service';
+import { EpassService } from '../../Services/epass.service';
 
 //get all epasses
 const GET_EPASS = gql`
@@ -41,5 +41,4 @@ export class ViewEpassComponent implements OnInit {
       console.log('there was an error sending the query', error);
     });
   }
-
 }

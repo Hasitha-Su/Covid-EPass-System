@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
-import { citizen } from './citizen.model';
-
+import { citizen } from '../Models/citizen.model';
 
 //create citizen
 const CREATE_CITIZEN = gql`

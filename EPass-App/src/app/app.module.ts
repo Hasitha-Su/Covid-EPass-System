@@ -8,7 +8,6 @@ import { InMemoryCache } from '@apollo/client/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { EpassModule } from './epass/epass.module';
 import { CitizenModule } from './citizen/citizen.module';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { CitizenModule } from './citizen/citizen.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    EpassModule,
     CitizenModule
     
   ],

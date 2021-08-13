@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { citizen } from '../citizen.model';
-import { CitizenService } from '../citizen.service';
+import { citizen } from '../../Models/citizen.model';
+import { CitizenService } from '../../Services/citizen.service';
 
 @Component({
   selector: 'app-registration',

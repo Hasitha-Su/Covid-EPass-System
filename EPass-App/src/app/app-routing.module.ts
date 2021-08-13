@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ViewEpassComponent } from './epass/view-epass/view-epass.component';
-import { RequestEpassComponent } from './epass/request-epass/request-epass.component';
+import { ViewEpassComponent } from './law-officer/view-epass/view-epass.component';
+import { RequestEpassComponent } from './citizen/request-epass/request-epass.component';
 import { RegistrationComponent } from './citizen/registration/registration.component';
 import { AuthenticateEpassComponent } from './law-officer/authenticate-epass/authenticate-epass.component';
 
