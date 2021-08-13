@@ -9,6 +9,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { EpassModule } from './epass/epass.module';
+import { CitizenModule } from './citizen/citizen.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { EpassModule } from './epass/epass.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    EpassModule
+    EpassModule,
+    CitizenModule
     
   ],
   declarations: [

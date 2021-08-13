@@ -5,7 +5,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Directive('@key(fields: "id")')
 @Entity()
 export class Citizen {
-  @Field((type)=> ID)
+  @Field((type) => ID)
   @Column()
   @PrimaryGeneratedColumn('uuid')
   id: string
@@ -17,5 +17,21 @@ export class Citizen {
   @Field()
   @Column()
   lastName: string
+
+  @Field()
+  @Column()
+  email: string
+
+  @Field()
+  @Column()
+  password: string
+
+  @Field()
+  @Column()
+  address_1: string
+
+  @Field()
+  @Column()
+  address_2: string
 
 }

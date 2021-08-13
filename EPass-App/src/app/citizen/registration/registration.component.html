@@ -4,37 +4,38 @@
       <h2>Citizen Registration Form </h2>
     </div>
     <br>
-    <form>
+    <form (ngSubmit)="onSubmit()" #citizenForm="ngForm">
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="">First Name</label>
-          <input type="text" class="form-control" id="" placeholder="">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" [(ngModel)]="citizenModel.firstName" #firstName="ngModel" name="firstName" required>
         </div>
         <div class="form-group col-md-6">
-          <label for="">Last Name</label>
-          <input type="text" class="form-control" id="" placeholder="">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" [(ngModel)]="citizenModel.lastName" #lastName="ngModel" name="lastName" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="">Email</label>
-          <input type="email" class="form-control" id="" placeholder="">
+          <input type="email" class="form-control" id="email" placeholder="" [(ngModel)]="citizenModel.email" #email="ngModel" name="email" required>
         </div>
         <div class="form-group col-md-6">
           <label for="">Password</label>
-          <input type="password" class="form-control" id="" placeholder="">
+          <input type="password" class="form-control" id="password" placeholder="" [(ngModel)]="citizenModel.password" #password="ngModel" name="password" required>
         </div>
       </div>
       <div class="form-group  col-md-12">
         <label for="">Address</label>
-        <input type="text" class="form-control" id="" placeholder="">
+        <input type="text" class="form-control" id="address_1" placeholder="" [(ngModel)]="citizenModel.address_1" #address_1="ngModel" name="address_1" required>
       </div>
       <div class="form-group col-md-12">
         <label for="">Address 2</label>
-        <input type="text" class="form-control" id="" placeholder="">
+        <input type="text" class="form-control" id="address_2" placeholder="" [(ngModel)]="citizenModel.address_2" #address_2="ngModel" name="address_2">
       </div>
       <div class="col-md-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!citizenForm.form.valid">Sign in</button>
+        <button type="submit" class="btn btn-primary" (click)=" newCitizen()">Reset</button>
       </div>
     </form>
   </div>

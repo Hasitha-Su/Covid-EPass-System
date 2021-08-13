@@ -1,0 +1,473 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210813.185334.11400.0.001.json",
+    "dumpEventTime": "2021-08-13T18:53:34Z",
+    "dumpEventTimeStamp": "1628861014146",
+    "processId": 11400,
+    "cwd": "D:\\M.E\\Virtusa\\Virtusa Learning\\Krish\\Covid E-Pass System\\EPass-App",
+    "commandLine": [
+      "node",
+      "C:\\Users\\blackcat\\AppData\\Roaming\\npm\\\\node_modules\\@angular\\cli\\bin\\ng",
+      "serve"
+    ],
+    "nodejsVersion": "v12.15.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.15.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.15.0/node-v12.15.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.15.0/node-v12.15.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.15.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.22000",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 9116296,
+        "nice": 0,
+        "sys": 28660265,
+        "idle": 37079906,
+        "irq": 846203
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 8738562,
+        "nice": 0,
+        "sys": 19346390,
+        "idle": 46771281,
+        "irq": 186656
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 11871484,
+        "nice": 0,
+        "sys": 22984453,
+        "idle": 40000281,
+        "irq": 354109
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 10375734,
+        "nice": 0,
+        "sys": 26041359,
+        "idle": 38439125,
+        "irq": 271703
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 10171750,
+        "nice": 0,
+        "sys": 22856593,
+        "idle": 41827875,
+        "irq": 237828
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 9103484,
+        "nice": 0,
+        "sys": 26855531,
+        "idle": 38897203,
+        "irq": 171921
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 10547125,
+        "nice": 0,
+        "sys": 22350390,
+        "idle": 41958703,
+        "irq": 154843
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 11108796,
+        "nice": 0,
+        "sys": 26546281,
+        "idle": 37201140,
+        "irq": 118343
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "vEthernet (WSL)",
+        "internal": false,
+        "mac": "00:15:5d:78:19:fb",
+        "address": "fe80::2c44:5f72:9097:3951",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 52
+      },
+      {
+        "name": "vEthernet (WSL)",
+        "internal": false,
+        "mac": "00:15:5d:78:19:fb",
+        "address": "172.22.240.1",
+        "netmask": "255.255.240.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "fe80::29:1739:a6e6:cc59",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "192.168.142.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "fe80::4d12:a498:fc73:cdea",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "192.168.121.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:4a:1c:15",
+        "address": "fe80::c461:2b03:5729:59bd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 28
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:4a:1c:15",
+        "address": "192.168.1.3",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-RQCL7MQ"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff64fc61759",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff64fc65b7c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff64fc64b38",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff64fd5446b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff650558d9e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff650540de1",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff65040e6ac",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff650419a50",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff650416584",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff65040be13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff65040a5e4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff65042b8b5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff650197b89",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff650984d3d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x000000d81044cd48",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2155302912,
+    "totalCommittedMemory": 2155302912,
+    "usedMemory": 2129686416,
+    "availableMemory": 60086416,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 2621440,
+        "committedMemory": 2621440,
+        "capacity": 1309360,
+        "used": 572936,
+        "available": 736424
+      },
+      "old_space": {
+        "memorySize": 1985851392,
+        "committedMemory": 1985851392,
+        "capacity": 1980526112,
+        "used": 1965227440,
+        "available": 15298672
+      },
+      "code_space": {
+        "memorySize": 6979584,
+        "committedMemory": 6979584,
+        "capacity": 5911456,
+        "used": 5911456,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5509120,
+        "committedMemory": 5509120,
+        "capacity": 4321920,
+        "used": 4321920,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 153456640,
+        "committedMemory": 153456640,
+        "capacity": 153069968,
+        "used": 153069968,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550400,
+        "used": 550400,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1309360,
+        "used": 0,
+        "available": 1309360
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 354.609,
+    "kernelCpuSeconds": 64.937,
+    "cpuConsumptionPercent": 6.1953,
+    "maxRss": 2201276416,
+    "pageFaults": {
+      "IORequired": 1448572,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 11168,
+      "writes": 73
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "=D:": "D:\\M.E\\Virtusa\\Virtusa Learning\\Krish\\Covid E-Pass System\\EPass-App",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\blackcat\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_13492_WNIPYURCMEVFSLPD",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-RQCL7MQ",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\blackcat\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ESET_OPTIONS": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\blackcat",
+    "IntelliJ IDEA": "D:\\softinst\\IntelliJ IDEA 2020.1\\bin;",
+    "IntelliJ IDEA Community Edition": "D:\\softinst\\IntelliJ IDEA Community Edition 2020.3\\bin;",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-11.0.9",
+    "LOCALAPPDATA": "C:\\Users\\blackcat\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-RQCL7MQ",
+    "MAVEN_HOME": "D:\\softinst\\java\\apache-maven-3.8.1-bin\\apache-maven-3.8.1",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "D:\\OneDrive - Sri Lanka Institute of Information Technology",
+    "OneDriveCommercial": "D:\\OneDrive - Sri Lanka Institute of Information Technology",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\softinst\\New Folder\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;D:\\softinst\\oracle\\virtual\\product\\12.2.0\\dbhome_1\\bin;D:\\app\\blackcat\\virtual\\product\\12.2.0\\dbhome_1\\bin;D:\\softinst\\spring-2.2.6.RELEASE\\bin;D:\\softinst\\java\\jdk-11.0.5;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\softinst\\git\\cmd;D:\\softinst\\wamp64\\bin\\php\\php7.3.5;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\PuTTY\\;D:\\softinst\\java\\apache-maven-3.8.1-bin\\apache-maven-3.8.1\\bin;D:\\softinst\\mingw-w64\\mingw32\\bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Java\\jdk-11.0.9\\bin;C:\\Program Files (x86)\\Common Files\\Ulead Systems\\MPEG;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\blackcat\\AppData\\Local\\Microsoft\\WindowsApps;D:\\software installation\\PyCharm\\bin;C:\\Users\\blackcat\\AppData\\Local\\atom\\bin;D:\\softinst\\Azure Data Studio\\bin;D:\\softinst\\java\\jdk-11.0.5;C:\\Users\\blackcat\\.dotnet\\tools;D:\\softinst\\IntelliJ IDEA 2020.1\\bin;SPRING_BOOT%\\bin;D:\\softinst\\Exercism;C:\\Users\\blackcat\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\softinst\\MongoDBServer3.6\\bin;D:\\softinst\\GitHub CLI\\;D:\\softinst\\angularcli;D:\\softinst\\VSCode-win32-x64-1.51.1\\bin;D:\\softinst\\IntelliJ IDEA Community Edition 2020.3\\bin;;C:\\Users\\blackcat\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\blackcat\\AppData\\Roaming\\npm;C:\\xampp\\php;;D:\\softinst\\Microsoft VS Code\\bin;C:\\Program Files\\heroku\\bin;C:\\Program Files\\JetBrains\\WebStorm 2021.2\\bin;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\PowerShell\\Modules\\",
+    "PT7HOME": "C:\\Program Files\\Cisco Packet Tracer 7.3.1",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm": "D:\\software installation\\PyCharm\\bin;",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
+    "SESSIONNAME": "Console",
+    "SPRING_HOME": "D:\\softinst\\spring-2.2.6.RELEASE",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\blackcat\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\blackcat\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-RQCL7MQ",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-RQCL7MQ",
+    "USERNAME": "blackcat",
+    "USERPROFILE": "C:\\Users\\blackcat",
+    "WEBPACK_DEV_SERVER": "true",
+    "WebStorm": "C:\\Program Files\\JetBrains\\WebStorm 2021.2\\bin;",
+    "windir": "C:\\WINDOWS",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.59.0",
+    "LANG": "en_US.UTF-8",
+    "COLORTERM": "truecolor",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-48bdb8108e-sock",
+    "GIT_ASKPASS": "d:\\softinst\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "D:\\softinst\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_ASKPASS_MAIN": "d:\\softinst\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\nlansp_c.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}

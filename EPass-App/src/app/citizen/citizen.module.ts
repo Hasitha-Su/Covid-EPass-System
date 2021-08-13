@@ -12,7 +12,10 @@ import { ProfileUpdateComponent } from './profile-update/profile-update.componen
   imports: [
     CommonModule,
     FormsModule 
+  ],
+  exports:[
+    RegistrationComponent
   ]
 })
 
-export class CitizenModuleModule { }
+export class CitizenModule { }
