@@ -44,4 +44,8 @@ export class EpassService {
   async forCitizen(id: string){
     return await this.epassRepository.find({"citizenId":id})
   }
+
+  async filterBtStatus(status: string): Promise<Epass[]> {
+    return await this.epassRepository.find({"status":status});
+  }
 }

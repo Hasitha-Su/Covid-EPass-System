@@ -1,5 +1,5 @@
 export interface epass{
-    id: string
+    id?: string
     category: string
     status:string
     other: string

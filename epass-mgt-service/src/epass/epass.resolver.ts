@@ -7,7 +7,7 @@ import { Citizen } from './entities/Citizen.entity';
 
 @Resolver(() => Epass)
 export class EpassResolver {
-  constructor(private readonly epassService: EpassService) {}
+  constructor(private readonly epassService: EpassService) { }
 
   @Mutation(() => Epass)
   createEpass(@Args('createEpassInput') createEpassInput: CreateEpassInput) {
@@ -37,5 +37,10 @@ export class EpassResolver {
   @ResolveField((of) => Citizen)
   citizen(@Parent() epass: Epass): any {
     return { __typename: 'Citizen', id: epass.citizenId };
+  }
+
+  @Query(() => [Epass], { name: 'filterByStatus' })
+  getEpassByStatus(@Args('status') status: string) {
+    return this.epassService.filterBtStatus(status);
   }
 }
