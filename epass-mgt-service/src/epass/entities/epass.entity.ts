@@ -26,4 +26,5 @@ export class Epass {
 
   @Field((type) => Citizen)
   citizen?: Citizen;
+  
 }

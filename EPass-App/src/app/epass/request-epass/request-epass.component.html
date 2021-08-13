@@ -15,7 +15,8 @@
 
             <div class="form-group">
                 <label for="other">Other</label>
-                <input type="text" class="form-control" id="other" [(ngModel)]="epassModel.other" name="other" #other="ngModel">
+                <!-- <input type="text" class="form-control" id="other" [(ngModel)]="epassModel.other" name="other" #other="ngModel"> -->
+                <textarea class="form-control" type="text" class="form-control" id="other" [(ngModel)]="epassModel.other" name="other" #other="ngModel" rows="5"></textarea>
             </div>
 
             <button type="submit" class="btn btn-success" [disabled]="!epassForm.form.valid">Submit</button>
