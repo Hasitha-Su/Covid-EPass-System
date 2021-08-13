@@ -23,12 +23,6 @@ const CREATE_EPASS = gql`mutation {
 }`;
 
 //delete epass
-// const DELETE_EPASS = gql`
-// mutation {removeEpass( id: $id){
-//     id
-//   }
-// }`;
-
 const DELETE_EPASS = gql`
   mutation removeEpass($id: String!) {
     removeEpass(id: $id) {

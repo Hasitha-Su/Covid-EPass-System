@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { citizen } from '../citizen.model';
+import { CitizenService } from '../citizen.service';
 
 @Component({
   selector: 'app-registration',
@@ -7,6 +8,8 @@ import { citizen } from '../citizen.model';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+
+  constructor(private _citizenService: CitizenService){}
 
   citizenModel: citizen = {
     firstName: '',
@@ -22,7 +25,22 @@ export class RegistrationComponent {
   onSubmit() {
     this.submitted = true;
     console.log(this.citizenModel)
+      this._citizenService.createCitizen(this.citizenModel).subscribe(({ data }) => {
+        console.log('got data', data);
+      }, (error) => {
+        console.log('there was an error sending the query', error);
+      });
+    
   }
+
+  // deleteEpass(id: string){
+  //   console.log(id)
+  //   this.epassService.deleteEpass(id).subscribe(({ data }) => {
+  //     console.log('got data', data);
+  //   }, (error) => {
+  //     console.log('there was an error sending the query', error);
+  //   });
+  // }
 
   newCitizen() {
 

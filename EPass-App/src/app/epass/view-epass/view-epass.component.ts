@@ -7,7 +7,6 @@ const GET_EPASS = gql`
   query{
     getAllEpass{
       id
-      name
     }
   }`
   ;
@@ -32,8 +31,6 @@ export class ViewEpassComponent implements OnInit {
         console.log(this.epassList);
         console.log(result.error);
       });
-
-    
   }
 
   deleteEpass(id: string){
@@ -44,7 +41,5 @@ export class ViewEpassComponent implements OnInit {
       console.log('there was an error sending the query', error);
     });
   }
-
-
 
 }

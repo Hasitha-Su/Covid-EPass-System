@@ -16,6 +16,10 @@ type Citizen {
   id: ID!
   firstName: String!
   lastName: String!
+  email: String!
+  password: String!
+  address_1: String!
+  address_2: String!
 }
 
 type Query {
@@ -32,10 +36,18 @@ type Mutation {
 input CreateCitizenInput {
   firstName: String!
   lastName: String!
+  email: String!
+  password: String!
+  address_1: String!
+  address_2: String!
 }
 
 input UpdateCitizenInput {
   id: String!
   firstName: String!
   lastName: String!
+  email: String!
+  password: String!
+  address_1: String!
+  address_2: String!
 }
