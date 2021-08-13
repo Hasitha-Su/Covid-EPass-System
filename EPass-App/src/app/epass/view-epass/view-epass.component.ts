@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
 import { EpassService } from '../epass.service';
 
-//Get All Citizen
+//get all epasses
 const GET_EPASS = gql`
   query{
     getAllEpass{
