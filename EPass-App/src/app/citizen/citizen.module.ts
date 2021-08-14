@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileUpdateComponent } from './profile-update/profile-update.component';
 import { RequestEpassComponent } from './request-epass/request-epass.component';
+import { ViewEpassComponent } from './view-epass/view-epass.component';
 
 @NgModule({
   declarations: [
     RegistrationComponent,
     ProfileUpdateComponent,
-    RequestEpassComponent
+    RequestEpassComponent,
+    ViewEpassComponent
   ],
   imports: [
     CommonModule,
