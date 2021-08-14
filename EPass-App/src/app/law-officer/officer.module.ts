@@ -5,11 +5,12 @@ import { ViewEpassComponent } from './view-epass/view-epass.component';
 import { ReviewRequestComponent } from './review-request/review-request.component';
 import { RouterModule } from '@angular/router';
 
+
 @NgModule({
   declarations: [
     ViewEpassComponent,
     AuthenticateEpassComponent,
-    ReviewRequestComponent
+    ReviewRequestComponent,
   ],
   imports: [
     CommonModule,
