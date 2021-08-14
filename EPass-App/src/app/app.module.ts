@@ -10,6 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CitizenModule } from './citizen/citizen.module';
 import { SharedModule } from './shared/shared.module';
+import { OfficerModule } from './law-officer/officer.module';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { SharedModule } from './shared/shared.module';
     RouterModule,
     AppRoutingModule,
     CitizenModule,
+    OfficerModule,
     SharedModule
   ],
   declarations: [

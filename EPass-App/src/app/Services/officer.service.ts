@@ -3,39 +3,39 @@ import { Apollo, gql } from 'apollo-angular';
 import { epass } from '../Models/epass.model';
 
 const GET_PENDING_EPASS = gql`
-  query{
-    getAllEpass{
+  query {
+  filterByStatus(status: "PENDING") {
+    id
+    category
+    status
+    citizen{
       id
-      category
-      status
-      other
+      firstName
+      lastName
+      email
+      address_1
+      address_2
     }
-  }`
-  ;
+  }
+}`;
 
 @Injectable({
   providedIn: 'root'
 })
-export class OfficerService implements OnInit  {
+export class OfficerService {
 
-  epassList: epass = {
-    id: '',
-    category: '',
-    status: '',
-    other: ''
-  };
+  epassList!: epass[]
 
-  constructor(private apollo: Apollo) { }
+  constructor(private _apollo: Apollo) { }
 
-  ngOnInit() {
-    this.apollo
+  getPending() {
+    return this._apollo
       .watchQuery({
         query: GET_PENDING_EPASS,
-      })
-      .valueChanges.subscribe((result: any) => {
-        this.epassList = result.data.getAllEpass;
-        console.log(this.epassList);
-        console.log(result.error);
-      });
+      }).valueChanges
+  }
+
+  changeStatus(){
+    
   }
 }

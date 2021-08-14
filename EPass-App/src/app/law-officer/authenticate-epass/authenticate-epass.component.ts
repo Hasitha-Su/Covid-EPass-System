@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { epass } from 'src/app/Models/epass.model';
+import { OfficerService } from 'src/app/Services/officer.service';
 
 @Component({
   selector: 'app-authenticate-epass',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthenticateEpassComponent implements OnInit {
 
-  constructor() { }
+  pendingEpass!: epass[];
 
-  ngOnInit(): void {
+  constructor(private _officerService:OfficerService) { }
+
+  ngOnInit(){
+
+    this._officerService.getPending().subscribe((result: any) => {
+      this.pendingEpass = result.data.filterByStatus;
+      console.log(this.pendingEpass);
+      console.log(result.error);
+    });
   }
+
+
 
 }
