@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AuthenticateEpassComponent } from './authenticate-epass/authenticate-epass.component';
 import { ViewEpassComponent } from './view-epass/view-epass.component';
 import { ReviewRequestComponent } from './review-request/review-request.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { ReviewRequestComponent } from './review-request/review-request.componen
     ReviewRequestComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class OfficerModule { }

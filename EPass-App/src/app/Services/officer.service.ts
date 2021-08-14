@@ -2,12 +2,23 @@ import { Injectable, OnInit } from '@angular/core';
 import { Apollo, gql } from 'apollo-angular';
 import { epass } from '../Models/epass.model';
 
+//get pending epasses 
 const GET_PENDING_EPASS = gql`
   query {
   filterByStatus(status: "PENDING") {
     id
     category
     status
+  }
+}`;
+
+//get epass with citizen details by id
+const GET_DETAILED_EPASS = gql`
+  query findEpassById($id:String!){
+    findEpassById(id: $id){
+    id
+    status
+    category
     citizen{
       id
       firstName
@@ -19,6 +30,7 @@ const GET_PENDING_EPASS = gql`
   }
 }`;
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -28,6 +40,7 @@ export class OfficerService {
 
   constructor(private _apollo: Apollo) { }
 
+  //get pending epasses 
   getPending() {
     return this._apollo
       .watchQuery({
@@ -35,7 +48,14 @@ export class OfficerService {
       }).valueChanges
   }
 
-  changeStatus(){
-    
+  //get epass with citizen details by id
+  getDetailedEpass(id:string) {
+    return this._apollo
+      .watchQuery({
+        query: GET_DETAILED_EPASS,
+        variables: {
+          id
+        }
+      }).valueChanges
   }
 }

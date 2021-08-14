@@ -20,7 +20,7 @@
                         <td>{{request.category}}</td>
                         <td></td>
                         <td>
-                           <button type="button" class="btn btn-primary"> Review Request</button>
+                           <a class="btn btn-primary"  [routerLink]="['/epass', request.id]" role="button">Review Request</a>
                         </td>
                     </tr>
                 </table>
