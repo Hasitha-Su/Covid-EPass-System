@@ -9,6 +9,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CitizenModule } from './citizen/citizen.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -17,8 +18,8 @@ import { CitizenModule } from './citizen/citizen.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    CitizenModule
-    
+    CitizenModule,
+    SharedModule
   ],
   declarations: [
     AppComponent

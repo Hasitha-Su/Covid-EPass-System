@@ -4,6 +4,7 @@ import { ViewEpassComponent } from './law-officer/view-epass/view-epass.componen
 import { RequestEpassComponent } from './citizen/request-epass/request-epass.component';
 import { RegistrationComponent } from './citizen/registration/registration.component';
 import { AuthenticateEpassComponent } from './law-officer/authenticate-epass/authenticate-epass.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'epass/viewAll', component: ViewEpassComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'epass/authentiacte', component: AuthenticateEpassComponent },
 
   { path: 'citizen/signup', component: RegistrationComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
